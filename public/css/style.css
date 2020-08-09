@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+body{
+    background-color: rgb(240, 215, 32);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Frijole', cursive;
+}
+
+.indexPokeName {
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid rgb(20, 141, 235);
+
+}
+.moves {
+    font-size: 20px;
+    color: rgb(153, 45, 45);
+    border: 2px solid black;
+    font-family: 'Trade Winds', cursive;
+}
+
+.name {
+    color: black;
+    font-family: 'Frijole', cursive;
+}
+
+.pokeDetail {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+}
+
+.slider{
+    width: 50%;
+    margin: 0 auto;
+
+    
+}
+.slides li {
+    background-color:rgb(240, 215, 32);
+}
