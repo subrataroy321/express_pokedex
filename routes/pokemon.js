@@ -3,8 +3,6 @@ var router = express.Router();
 var db = require('../models');
 const axios = require('axios');
 
-
-
 // GET /pokemon - return a page with favorited Pokemon
 router.get('/', (req, res) => {
   db.pokemon.findAll().then((poke) => {
@@ -26,7 +24,7 @@ router.post('/', function(req, res) {
   })
 });
 
-
+// GET /pokemon/show - return a page with Pokemon Details
 router.get('/:name', (req,res) => {
   let pokeUrl = `http://pokeapi.co/api/v2/pokemon/${req.params.name}`;
   axios.get(pokeUrl).then(response => {
@@ -34,6 +32,7 @@ router.get('/:name', (req,res) => {
   })
 })
 
+// DELETE /pokemon - get the name of a pokemon and delete it from the database
 router.delete('/:pokeName', (req, res) => {
   console.log(req)
   db.pokemon.destroy({

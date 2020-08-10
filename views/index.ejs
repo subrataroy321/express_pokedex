@@ -2,23 +2,24 @@
   <h2 class="text-center header">The Original 151 Pokemon</h2>
 
   <% if(parseInt(offset) > 0 ) { %>
-    <% //offset = '0' %>
     <a class="btn left" href="/?offset=<%= parseInt(offset)-20 %> ">Previous 20</a>
     <% } %>
     <% if (parseInt(offset) < 131) { %>
-    <% //offset = '151' %> 
     <a class="btn right" href="/?offset=<%= parseInt(offset)+20 %> ">Next 20</a>
   <% } %>
     </br>
     </br>
     </br>
-  <% pokemon.forEach(function(pokemon) { %>
-    <div class="well ">
-      <div class="indexPokeImg" href="/pokemon/<%= pokemon.name %>"> 
-        <%= pokemon.url %></div>
-      <a class="indexPokeName" href="/pokemon/<%= pokemon.name %>"> <%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) %></a>
-    </br></br></br>
+  <div class="pokeContainer">
+    <% pokemonArray.forEach(function(pokemon) { %>
+      <% // console.log(pokemon) %>  
+      <div class="well ">
+      </br></br>
+        <a href="/pokemon/<%= pokemon.name %>"><img src="<%= pokemon.sprites.other.dream_world.front_default %>" alt="PokeImage" height="200px"></a>
+        </br></br>
+        <a class="indexPokeName" href="/pokemon/<%= pokemon.name %>"> <%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) %></a>
+        </br>
     </div>
-  <% }); %>
-
+    <% }); %>
+  </div>
 </div>

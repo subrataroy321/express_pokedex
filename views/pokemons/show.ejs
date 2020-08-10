@@ -9,26 +9,17 @@
 <form action="/pokemon/<%= pokeName %>?_method=DELETE" method="post">
     <button class="btn btn-primary purple accent-4" type="submit">Remove from Favorite Pokemon</button>
 </form>
-
+</br>
 <div class="slider" >
     <ul class="slides">
       <li>
-        <img src="<%= pokeData.sprites.front_default %>" alt="Pokemon Image"  height="250px">
+        <img class="slidesImg" src="<%= pokeData.sprites.other.dream_world.front_default %>" alt="Pokemon Image" height="">
       </li>
       <li>
-        <img src="<%= pokeData.sprites.back_default %>" alt="Pokemon Image"  height="250px">
-      </li>
-      <li>
-        <img src="<%= pokeData.sprites.front_default %>" alt="Pokemon Image"  height="250px">
-      </li>
-      <li>
-        <img src="<%= pokeData.sprites.back_default %>" alt="Pokemon Image"  height="250px">
+        <img class="slidesImg" src="<%= pokeData.sprites.other.dream_world.front_default %>" alt="Pokemon Image" height=""> 
       </li>
     </ul>
-  </div>
-
-
-
+</div>
 
 <h4><%= pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1) %></h4>
 <h6>Height: <%= pokeData.height %> inchs </h6>

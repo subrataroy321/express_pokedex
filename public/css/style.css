@@ -6,14 +6,21 @@ body{
     text-align: center;
     padding: 10px;
     font-family: 'Frijole', cursive;
+    color: #1f9c90;
 }
 
 .indexPokeName {
     font-size: 30px;
     padding: 10px;
-    border: 2px solid rgb(20, 141, 235);
-
+    color: #26a69a;
 }
+.indexPokeName2 {
+    font-size: 30px;
+    padding: 10px;
+    color:  #1f9c90;
+    border: 2px solid rgb(20, 141, 235); 
+}
+
 .moves {
     font-size: 20px;
     color: rgb(153, 45, 45);
@@ -22,7 +29,7 @@ body{
 }
 
 .name {
-    color: black;
+    color: #1f9c90;
     font-family: 'Frijole', cursive;
 }
 
@@ -35,11 +42,28 @@ body{
 }
 
 .slider{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
-
-    
 }
+
 .slides li {
     background-color:rgb(240, 215, 32);
+}
+
+.slider .slides li img {
+    height: 100%;
+    width: 100%;
+    background-size: contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pokeContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-gap: 10px;
+}
+.well {
+    border: 2px solid black;
 }

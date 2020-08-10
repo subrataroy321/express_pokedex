@@ -1,12 +1,12 @@
-
 <% if(added) { %>
-    <h5><%= added %>   added to Favorites</h5>
+    <h5><%= added %>  added to Favorites</h5>
 <% } %>  
+
 <h4>Your Favorite pokemons:</h4>
 </br></br>
 <ul>
     <% myPokes.forEach(poke => { %>
-        <li><a class="indexPokeName" href="/pokemon/<%= poke.name.toLowerCase() %>"> <%= poke.name.charAt(0).toUpperCase() + poke.name.slice(1) %></a></li>
+        <li><a class="indexPokeName2" href="/pokemon/<%= poke.name.toLowerCase() %>"> <%= poke.name.charAt(0).toUpperCase() + poke.name.slice(1) %></a></li>
         </br></br>
     <% }) %> 
 </ul>
