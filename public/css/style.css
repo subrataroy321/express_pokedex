@@ -67,3 +67,9 @@ body{
 .well {
     border: 2px solid black;
 }
+
+.well2 {
+    margin: 0 auto;
+    width: 50%;
+    border: 4px solid black;
+}

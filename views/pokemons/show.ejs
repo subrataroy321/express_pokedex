@@ -1,7 +1,7 @@
-
+<%// console.log(pokeData) %> 
 <form method="POST" action="/pokemon">
     <input type="hidden" name="name" value="<%= pokeData.name %>">
-    <input type="hidden" name="url" value="<%= pokeData.url %>">
+    <input type="hidden" name="url" value="<%= pokeData.sprites.other.dream_world.front_default %>">
     <button class="btn btn-primary purple accent-4" type="submit">Add to Favorite Pokemon</button>
 </form>
 </br>
@@ -49,3 +49,9 @@
         </ul>
     </div>
 </div>
+
+<% // I want to work more on this project %>
+
+<% // To Do 'pokeData.sprites.other.official-artwork.front_default' can't access official-artwork since its the key is a string %>
+<% // to do if the pokemon not exists in favorite pokemon then add to favorite will show %>
+<% // to do if the pokemon exists in favorite pokemon then remove from favorite will show %>
